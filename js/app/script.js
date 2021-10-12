@@ -26,7 +26,7 @@ const categories = [category1, category2, category3, category4, category5, categ
 var clues;
 var clickedClues;
 // store the URL for the API
-const jeopardyAPI = "http://jservice.io/api/clues?category=";
+const jeopardyAPI = "https://jservice.io/api/clues?category=";
 
 class Clues {
     constructor() {

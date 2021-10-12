@@ -20,7 +20,7 @@ function autoFillPopUp(question) {
   let $submitButton = $("<input>")
     .attr("type", "submit")
     .attr("value", "submit")
-    .addClass("subbmitButton")
+    .addClass("submitButton")
     .css("display", "inline-block");
 
   let $field = $("<form>")

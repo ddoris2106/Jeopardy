@@ -1,0 +1,26 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px ems vh vw */
+    margin: 0;
+    padding: 0;
+    // background-color: rgb(20, 52, 164);
+    // color: rgb(206, 217, 247);
+    font-weight: bold;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+body{
+    background-color: var(--white);
+    // background-color: var(--main-blue);
+    background-image: linear-gradient(to bottom, var(--white) 45%, var(--light-blue) 95%);
+}
+
+.clicked{
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,40 @@
+.end{
+    // display: none;
+    width: 100vw;
+    height: 93vh;
+    position: absolute;
+    top: 7vh;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: all 3s ease;
+    z-index: 100;
+    background-color: var(--white);
+    color: var(--main-blue);
+    font-size: 4rem;
+
+    &__score{
+        width: 50%;
+        height: 20%;
+        display: block;
+        text-align: center;
+        text-shadow: 0.25rem 0.2rem 0.25rem var(--black);
+    }
+
+    &__restart{
+        width: 20rem;
+        height: 5rem;
+        color: var(--darker-blue);
+        border-radius: 0.75rem;
+        display: block;
+        font-weight: var(--bold-font-weight);
+
+        &:hover{
+            background-color: rgb(206, 217, 247);
+        }
+    }
+}

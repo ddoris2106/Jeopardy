@@ -1,0 +1,231 @@
+/* *****************************
+COLOR PALETTE
+White: rgb(240, 243, 244);
+
+White: rgb(206, 217, 247);
+Brown: rgb(242, 197, 138);
+Blue: rgb(40, 10, 195);
+Lighter Blue: rgb(20, 52, 164);
+Red: rgb(225, 61, 103);
+Black: rgb(2, 0, 7);
+font-family: 'Dosis', sans-serif;
+font-family: gyparody, sans-serif;
+font weights: 500, 700, 900;
+******************************/
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px ems vh vw */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 52, 164);
+    color: rgb(206, 217, 247);
+    font-weight: bold;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+#title{
+    width: 99vw;
+    height: 7vh;
+    font-size: 4.25rem;
+    line-height: 3.5rem;
+    text-align: center;
+    text-shadow: 0.25rem 0.2rem 0.25rem rgb(2, 0, 7);
+}
+
+#gameContainer{
+    width: 95vw;
+    height: 80vh;
+    background-color: rgb(2, 0, 7);
+    border: 0.5rem solid black;
+    position: relative;
+    left: 2vw;
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-columns: 16.1% 16.1% 16.1% 16.1% 16.1% 16.1%;
+    grid-template-rows: 15.3% 15.3% 15.3% 15.3% 15.3% 15.3%;
+}
+
+.category, .clue{
+    background-color: rgb(40, 10, 195);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.clue:hover{
+    background-color: rgb(20, 52, 164);
+}
+
+.category{
+    font-size: 2.5rem;
+}
+
+.clue{
+    font-size: 4.5rem;
+}
+
+
+#score{
+    border: 0.2rem solid black;
+    display: inline-block;
+    position: relative;
+    left: 2%;
+    width: 17.5vw;
+    height: 10vh;
+    font-size: 3rem;
+    line-height: 5.5rem;
+    text-align: left;
+    text-shadow: 0.25rem 0.2rem 0.25rem rgb(2, 0, 7);
+    margin: 0;
+    /* margin-top: 1vh; */
+}
+
+#timer{
+    border: 0.2rem solid black;
+    display: inline-block;
+    position: absolute;
+    right: 2.5%;
+    width: 17.5vw;
+    height: 10vh;
+    font-size: 3rem;
+    line-height: 5.5rem;
+    text-align: right;
+    /* text-shadow: 0.25rem 0.2rem 0.25rem rgb(2, 0, 7); */
+    /* margin-top: 1vh; */
+}
+
+#preview{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(40, 10, 195);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+#previewTitle{
+    width: 50vw;
+    height: 15vh;
+    font-size: 6rem;
+    line-height: 8rem;
+    text-align: center;
+    text-shadow: 0.25rem 0.2rem 0.25rem rgb(20, 52, 164);
+    color: rgb(206, 217, 247);
+    /* border: 0.2rem solid black; */
+    position: relative;
+    left: 25%;
+    top: 10%;
+}
+
+#previewText{
+    width: 50vw;
+    height: 10vh;
+    font-size: 3.5rem;
+    /* border: 0.2rem solid black; */
+    position: relative;
+    left: 25%;
+    top: 10%;
+    text-align: center;
+    text-shadow: 0.25rem 0.2rem 0.25rem rgb(20, 52, 164);
+    color: rgb(206, 217, 247);
+}
+
+#start{
+    width: 7rem;
+    height: 3rem;
+    color: rgb(40, 10, 195);
+    border-radius: 0.75rem;
+    position: relative;
+    left: 46%;
+    top: 50%;
+}
+
+#start:hover{
+    background-color: rgb(206, 217, 247);
+}
+
+:root{
+  --white: #FFFFFC;
+  --brown: #D9D5C1;
+  --main-blue: #347EBF;
+  --light-blue: #91CDF2;
+  --blue: #6085A6;
+  --dark-blue: #16558C;
+  --darker-blue: #022859;
+  --very-dark-blue: #011126;
+  --black: #0D0D0D;
+  --red: #D92B04;
+}
+
+
+body{
+  background-color: var(--white);
+  background-image: linear-gradient(to bottom, var(--white) 30%, var(--light-blue) 90%);
+}
+
+#gridContainer{
+  display: grid;
+  overflow: hidden;
+  width: 600px;
+  height: 225px;
+  padding: 1rem;
+  /* border: 2px solid blue; */
+  grid-template: auto auto / auto auto auto;
+  grid-gap: 25px;
+  /* background-color: ; */
+}
+
+.clue{
+  border: 3px solid var(--very-dark-blue);
+  /* color: var(--dark-blue); */
+  color: var(--main-blue);
+  border-radius: 2.5%;
+  box-shadow: -0.05rem 0.05em 0.5rem var(--darker-blue);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: -0.1rem 0.1rem 0.25rem var(--very-dark-blue);
+  transition: all 300ms;
+  padding: 0.5rem;
+  /* height: 50%; */
+  /* width: 50%; */
+}
+
+.clue:hover{
+  box-shadow: -0.15rem 0.15em 0.5rem var(--darker-blue);
+  border-color: var(--brown);
+  text-shadow: -0.1rem 0.1rem 0.25rem var(--dark-blue);
+}
+
+
+.question{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  font-size: 2.25rem;
+  overflow: hidden;
+  line-height: 2rem;
+  padding: 1rem;
+  background-color: var(--main-blue);
+}
+
+.ques{
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.ans{
+  /* border: 7px solid black; */
+  width: 40%;
+}

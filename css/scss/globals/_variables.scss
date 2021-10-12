@@ -1,0 +1,32 @@
+/******************************
+COLOR PALETTE
+White: rgb(240, 243, 244);
+
+White: rgb(206, 217, 247);
+Brown: rgb(242, 197, 138);
+Blue: rgb(40, 10, 195);
+Lighter Blue: rgb(20, 52, 164);
+Red: rgb(225, 61, 103);
+Black: rgb(2, 0, 7);
+font-family: 'Dosis', sans-serif;
+font-family: gyparody, sans-serif;
+font weights: 500, 700, 900;
+******************************/
+
+:root{
+  --white: #FFFFFC;
+  --brown: #D9D5C1;
+  --main-blue: #347EBF;
+  --light-blue: #91CDF2;
+  --blue: #6085A6;
+  --dark-blue: #16558C;
+  --darker-blue: #022859;
+  --very-dark-blue: #011126;
+  --black: #0D0D0D;
+  --red: #D92B04;
+  --title-font: 'gyparody', sans-serif;
+  --body-font: 'Dosis', sans-serif;
+  --regular-font-weight: 500;
+  --bold-font-weight: 700;
+  --heavy-font-weight: 900;
+}

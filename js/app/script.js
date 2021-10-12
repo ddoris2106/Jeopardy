@@ -221,6 +221,8 @@ function displayGameBoard(){
                 e.preventDefault();
                 console.log("submitted. checking!");
                 
+                document.querySelector(".submitButton").remove();
+
                 //   console.log(e.target.className);
                 let $submittedAns = $(".ans").val().toLowerCase();
                 let answer = clues[cat].clue[pos].clueAns.toLowerCase();
